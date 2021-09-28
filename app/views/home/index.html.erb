@@ -1,4 +1,45 @@
-<h1>Home#index</h1>
-<h1 class="animate__animated animate__bounce">An animated element</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<h2>this will be changed later</h2>  
+<h1>A Friends List app built by Ruby on Rails and styled with Bootstrap</h1>
+<hr>
+<br></br>
+<div id="carouselExampleDark" class="carousel carousel-dark slide animate__animated animate__bounce" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+    <%= image_tag asset_path('MVC.png'), class: "d-block w-100", alt: "MVC"  %>
+     
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Ruby on Rails?</h3>
+        <h5>Rails is a web-application framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern.</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+       <%= image_tag asset_path('Rails1.jpg'), class: "d-block w-100", alt: "Rails"  %>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Why Ruby on Rails?</h3>
+        <h5></h5>
+        <h5>Rails is currently a very mature and feature complete framework. "Rapid development", "Great gems" and "Great community" are the key factors why developers consider Rails.</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag asset_path('Rails2.png'), class: "d-block w-100", alt: "Rails Work"  %>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Work with Rails</h3>
+        <h5>Rails is like a prepackaged toolkit, which can get most of the common tasks done fairly with ease.
+
+It's the ideal one if you're the only dev for your project because you get so many things already baked-in the framework that you'd only need to deeply care about specific stuff.</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

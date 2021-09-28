@@ -16,8 +16,12 @@
 
 - Services (job queues, cache servers, search engines, etc.)
 
-- Deployment instructions
-
+- Deployment: 
+  + Move the **Sqlite3** database to `group :developement`
+  + Create `group :production`
+  + Add **PostgreSQL** to production with `gem 'pg', '~> 1.2', '>= 1.2.3'`
+  + Commit changes and push to Heroku.
+  + Once fully deployed, run `db:migrate` for the new **PostgreSQL** database
 - ...
 
 # Ruby on Rails, or Rails,
